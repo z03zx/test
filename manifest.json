@@ -1,0 +1,20 @@
+{
+    "name": "フォーム記憶アプリ",
+    "short_name": "記憶アプリ",
+    "description": "10項目のフォームデータを記憶できるPWAアプリ",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4285f4",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='64' fill='%234285f4'/%3E%3Cg fill='%23ffffff'%3E%3Crect x='128' y='128' width='256' height='32' rx='8'/%3E%3Crect x='128' y='192' width='256' height='16' rx='8'/%3E%3Crect x='128' y='240' width='256' height='16' rx='8'/%3E%3Crect x='128' y='288' width='256' height='16' rx='8'/%3E%3Crect x='128' y='336' width='256' height='16' rx='8'/%3E%3Ccircle cx='256' cy='400' r='24'/%3E%3C/g%3E%3C/svg%3E",
+            "type": "image/svg+xml",
+            "sizes": "512x512",
+            "purpose": "any"
+        }
+    ],
+    "categories": ["productivity", "utilities"],
+    "lang": "ja-JP"
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4285f4">
+    <title>フォーム記憶アプリ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='64' fill='%234285f4'/%3E%3Cg fill='%23ffffff'%3E%3Crect x='128' y='128' width='256' height='32' rx='8'/%3E%3Crect x='128' y='192' width='256' height='16' rx='8'/%3E%3Crect x='128' y='240' width='256' height='16' rx='8'/%3E%3Crect x='128' y='288' width='256' height='16' rx='8'/%3E%3Crect x='128' y='336' width='256' height='16' rx='8'/%3E%3Ccircle cx='256' cy='400' r='24'/%3E%3C/g%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='64' fill='%234285f4'/%3E%3Cg fill='%23ffffff'%3E%3Crect x='128' y='128' width='256' height='32' rx='8'/%3E%3Crect x='128' y='192' width='256' height='16' rx='8'/%3E%3Crect x='128' y='240' width='256' height='16' rx='8'/%3E%3Crect x='128' y='288' width='256' height='16' rx='8'/%3E%3Crect x='128' y='336' width='256' height='16' rx='8'/%3E%3Ccircle cx='256' cy='400' r='24'/%3E%3C/g%3E%3C/svg%3E">
+</head>
+<body>
+    <div class="container">
+        <h1>フォーム記憶アプリ</h1>
+        
+        <form id="memoryForm">
+            <div class="form-group">
+                <label for="field1">項目 1:</label>
+                <input type="text" id="field1" name="field1">
+            </div>
+            
+            <div class="form-group">
+                <label for="field2">項目 2:</label>
+                <input type="text" id="field2" name="field2">
+            </div>
+            
+            <div class="form-group">
+                <label for="field3">項目 3:</label>
+                <input type="text" id="field3" name="field3">
+            </div>
+            
+            <div class="form-group">
+                <label for="field4">項目 4:</label>
+                <input type="text" id="field4" name="field4">
+            </div>
+            
+            <div class="form-group">
+                <label for="field5">項目 5:</label>
+                <input type="text" id="field5" name="field5">
+            </div>
+            
+            <div class="form-group">
+                <label for="field6">項目 6:</label>
+                <input type="text" id="field6" name="field6">
+            </div>
+            
+            <div class="form-group">
+                <label for="field7">項目 7:</label>
+                <input type="text" id="field7" name="field7">
+            </div>
+            
+            <div class="form-group">
+                <label for="field8">項目 8:</label>
+                <input type="text" id="field8" name="field8">
+            </div>
+            
+            <div class="form-group">
+                <label for="field9">項目 9:</label>
+                <input type="text" id="field9" name="field9">
+            </div>
+            
+            <div class="form-group">
+                <label for="field10">項目 10:</label>
+                <input type="text" id="field10" name="field10">
+            </div>
+            
+            <div class="button-group">
+                <button type="button" id="saveButton">記憶する</button>
+                <button type="button" id="loadButton">読み込む</button>
+                <button type="reset" id="clearButton">クリア</button>
+            </div>
+        </form>
+        
+        <div id="notification" class="notification hidden"></div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        // サービスワーカーの登録
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(reg => console.log('サービスワーカーが登録されました', reg))
+                .catch(err => console.log('サービスワーカーの登録に失敗しました', err));
+        }
+    </script>
+</body>
+</html>
