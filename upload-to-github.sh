@@ -4,8 +4,8 @@
 REPO_URL="https://github.com/z03zx/test.git"
 
 # Gitのユーザー名とメールアドレスを設定
-git config --global user.email "z03zx65023@gmail.com"
-git config --global user.name "z03zx"
+git config --global user.email ""
+git config --global user.name ""
 
 # 現在のディレクトリをGitリポジトリとして初期化
 git init
